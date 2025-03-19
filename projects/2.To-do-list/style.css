@@ -1,0 +1,160 @@
+/** @format */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.todo-container {
+  background: white;
+  padding: 25px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #ff5584;
+  box-shadow: 0px 0px 8px rgba(255, 85, 132, 0.5);
+}
+
+button {
+  padding: 12px 14px;
+  border: none;
+  background-color: #ff4e78;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #e03e64;
+  transform: scale(1.05);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  background: #fff7f7;
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInTask 0.3s ease forwards;
+}
+
+li span {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+li.completed {
+  text-decoration: line-through;
+  background: #d4ffd4;
+  color: #666;
+  opacity: 0.8;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background: darkred;
+  transform: scale(1.1);
+}
+
+#clearCompleted {
+  margin-top: 20px;
+  width: 100%;
+  background: #ff9a9e;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#clearCompleted:hover {
+  background: #e56e75;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInTask {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
