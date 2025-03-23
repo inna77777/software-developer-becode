@@ -1,0 +1,63 @@
+ body {
+        text-align: center;
+        background: #54b435;
+        color: white;
+      }
+      h1 {
+        font-family: "Bytesized", sans-serif;
+        font-size: 50px;
+        text-shadow: 2px 2px 4px black;
+        margin: 20px 0;
+      }
+      #game-board {
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: repeat(3, 120px);
+        gap: 15px;
+        justify-content: center;
+        margin: 20px auto;
+        width: 400px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+      }
+      .hole {
+        width: 120px;
+        height: 120px;
+        background: radial-gradient(circle, #481e14 40%, #2e100b 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      #score,
+      #timer {
+        font-family: "Tektur", sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px;
+        text-shadow: 2px 2px 4px black;
+      }
+      .btn {
+        padding: 15px 25px;
+        font-size: 20px;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 5px;
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+      #start-btn {
+        background: linear-gradient(45deg, #d69ade, #e53888);
+      }
+      #stop-btn {
+        background: linear-gradient(45deg, #261fb3, #a1e3f9);
+      }
+      .btn:hover {
+        transform: scale(1.1);
+      }
