@@ -1,4 +1,39 @@
 /** @format */
+// TODO: Exercise 1
+
+// const typeWriter = () => {
+//   const word = "Wozniak";
+//   let index = 0;
+//   const intervalId = setInterval(() => {
+//     document.body.innerText += word[index];
+//     index++;
+//     if (index === word.length) {
+//       clearInterval(intervalId);
+//     }
+//   }, 1000);
+// }
+
+// typeWriter();
+
+// TODO: Exercise 2
+// const elapsedTime = () => {
+//   let seconds = 0;
+//   setInterval(() => {
+//     seconds++;
+//     let timeDisplay = seconds;
+
+//     if (seconds >= 60) {
+//       const minutes = Math.floor(seconds / 60);
+//       timeDisplay = `${minutes} minute${minutes > 1 ? "s" : ""} has passed`;
+//     }
+
+//     document.body.innerText = timeDisplay;
+//   }, 1000);
+// }
+
+// elapsedTime();
+
+// TODO: Exercise 3
 
 let score = 0;
 let activeHole = null;
@@ -9,7 +44,7 @@ let gameRunning = false;
 let gameEnded = false;
 let gameOverAlertShown = false;
 
-function spawnMole() {
+const spawnMole = () => {
   if (!gameRunning) return;
 
   if (activeHole) {
@@ -38,9 +73,9 @@ function spawnMole() {
       activeHole = null;
     }
   }, 1000);
-}
+};
 
-function startGame() {
+const startGame = () => {
   score = 0;
   timeLeft = 30;
   gameRunning = true;
@@ -67,9 +102,9 @@ function startGame() {
       stopGame();
     }
   }, 1000);
-}
+};
 
-function stopGame() {
+const stopGame = () => {
   if (gameEnded) return;
   gameEnded = true;
 
@@ -90,7 +125,7 @@ function stopGame() {
 
   document.getElementById("start-btn").style.display = "inline-block";
   document.getElementById("stop-btn").style.display = "none";
-}
+};
 
 document.getElementById("start-btn").addEventListener("click", startGame);
 document.getElementById("stop-btn").addEventListener("click", stopGame);
