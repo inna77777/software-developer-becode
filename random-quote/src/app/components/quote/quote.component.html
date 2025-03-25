@@ -1,0 +1,13 @@
+<div class="quote-container">
+  <button (click)="fetchQuote()">🔄 New Quote</button>
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="errorMessage">{{ errorMessage }}</div>
+  <blockquote *ngIf="quote">
+    "{{quote}}"
+  </blockquote>
+
+  <div>
+    <img *ngIf="image" [src]="image" alt="{{author}}">
+    <p>- {{author}} <span *ngIf="age"> (Estimated Age: {{ age }})</span></p>
+  </div>
+</div>
