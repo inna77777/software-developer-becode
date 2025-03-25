@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON & Agify API</title>
+</head>
+<body>
+
+    <h2>Load JSON Rules</h2>
+    <button id="load-rules">Load Rules</button>
+    <ul id="rules-list"></ul>
+
+    <h2>Guess Age by Name</h2>
+    <input type="text" id="name-input" placeholder="Enter a name">
+    <select id="country-select">
+        <option value="">No country</option>
+        <option value="US">USA</option>
+        <option value="FR">France</option>
+        <option value="JP">Japan</option>
+    </select>
+    <button id="fetch-age">Predict Age</button>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
