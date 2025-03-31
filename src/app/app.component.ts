@@ -56,6 +56,9 @@ export class AppComponent implements OnInit {
           return;
         }
 
+        // Set city name from API response
+        this.city = data.city;
+
         this.weatherData = {
           city: this.city,
           originalTemperature: data.temperature.current,
