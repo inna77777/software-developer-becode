@@ -3,7 +3,7 @@
 ## Overview
 Angular Weather App is a weather forecasting application built with Angular. It fetches weather data from an API and displays temperature, humidity, wind speed, and other weather-related information in an intuitive UI. The app includes a toggle feature for switching between Celsius and Fahrenheit.
 
-🔗 **Live Demo:** [Angular Weather App](https://my-flix777.netlify.app/)  
+🔗 **Live Demo:** [Angular Weather App](https://weather-becode-angular.netlify.app/)  
 
 ## Features
 - Displays real-time weather information
