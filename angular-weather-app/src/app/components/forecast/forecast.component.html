@@ -1,0 +1,33 @@
+<div *ngIf="forecastData?.length > 0; else noForecast">
+  <div class="forecast-container">
+    <div *ngFor="let day of forecastData" class="forecast-day">
+      <div class="forecast-date">{{ day.day }}</div>
+      <img
+        [src]="day.icon"
+        [alt]="'Weather icon for ' + day.day"
+        class="forecast-icon"
+      />
+      <div class="forecast-temp">
+        <span class="max-temp"
+          >{{ getTemperature(day.originalTempMax) }}°{{
+            isCelsius ? "C" : "F"
+          }}</span
+        >
+        <span class="min-temp">
+          {{ getTemperature(day.originalTempMin) }}°{{
+            isCelsius ? "C" : "F"
+          }}</span
+        >
+      </div>
+    </div>
+  </div>
+
+  <canvas #forecastChart></canvas>
+</div>
+
+<!-- Message when no forecast data is available -->
+<ng-template #noForecast>
+  <p *ngIf="forecastData === undefined" class="error">
+    Enter a city to see the forecast.
+  </p>
+</ng-template>
