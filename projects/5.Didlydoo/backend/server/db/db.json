@@ -1,0 +1,460 @@
+[
+  {
+    "id": "6d26b56d12f2",
+    "name": "gym",
+    "author": "popopo",
+    "description": "Long hair, height 165 cm",
+    "dates": [
+      "2025-05-09",
+      "2025-04-19"
+    ],
+    "created_at": "2025-04-06T15:49:15.403Z",
+    "num_modification": 0,
+    "last_modification": "2025-04-06T15:49:15.403Z",
+    "attendees": [
+      {
+        "name": "momo",
+        "dates": [
+          {
+            "date": "2025-04-19",
+            "available": true
+          },
+          {
+            "date": "2025-05-09",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "momo2",
+        "dates": [
+          {
+            "date": "2025-04-19",
+            "available": true
+          },
+          {
+            "date": "2025-05-09",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "momo3",
+        "dates": [
+          {
+            "date": "2025-04-19",
+            "available": true
+          },
+          {
+            "date": "2025-05-09",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "momo4",
+        "dates": [
+          {
+            "date": "2025-04-19",
+            "available": true
+          },
+          {
+            "date": "2025-05-09",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "momo5",
+        "dates": [
+          {
+            "date": "2025-04-19",
+            "available": true
+          },
+          {
+            "date": "2025-05-09",
+            "available": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "079233a7ece7",
+    "name": "Angeli",
+    "author": "sdc; dslkc ",
+    "description": "zlkec,nlzernr le",
+    "dates": [
+      "2025-04-25",
+      "2025-05-11"
+    ],
+    "created_at": "2025-04-06T15:40:18.447Z",
+    "num_modification": 0,
+    "last_modification": "2025-04-06T15:40:18.447Z",
+    "attendees": [
+      {
+        "name": "momo",
+        "dates": [
+          {
+            "date": "2025-04-25",
+            "available": true
+          },
+          {
+            "date": "2025-05-11",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "momo2",
+        "dates": [
+          {
+            "date": "2025-04-25",
+            "available": true
+          },
+          {
+            "date": "2025-05-11",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "momo3",
+        "dates": [
+          {
+            "date": "2025-04-25",
+            "available": true
+          },
+          {
+            "date": "2025-05-11",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "momo4",
+        "dates": [
+          {
+            "date": "2025-04-25",
+            "available": true
+          },
+          {
+            "date": "2025-05-11",
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b1c2d3e4f5g6",
+    "name": "Web Dev",
+    "author": "Sarah",
+    "description": "lllllldcdcd",
+    "dates": [
+      "2025-05-20",
+      "2025-05-21"
+    ],
+    "created_at": "2025-04-02T15:00:00.000Z",
+    "num_modification": 5,
+    "last_modification": "2025-04-04T16:11:47.681Z",
+    "attendees": [
+      {
+        "name": "Tom",
+        "dates": [
+          {
+            "date": "2025-05-20",
+            "available": true
+          },
+          {
+            "date": "2025-05-21",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Nina",
+        "dates": [
+          {
+            "date": "2025-05-20",
+            "available": false
+          },
+          {
+            "date": "2025-05-21",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "inna",
+        "dates": [
+          {
+            "date": "2025-05-20",
+            "available": true
+          },
+          {
+            "date": "2025-05-21",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "lolo",
+        "dates": [
+          {
+            "date": "2025-05-20",
+            "available": true
+          },
+          {
+            "date": "2025-05-21",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "kiki",
+        "dates": [
+          {
+            "date": "2025-05-20",
+            "available": true
+          },
+          {
+            "date": "2025-05-21",
+            "available": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "t4u5v6w7x8y9",
+    "name": "Creative Coding Workshop",
+    "author": "Olivia",
+    "description": "Learn how to create art with code in this interactive workshop.",
+    "dates": [
+      "2025-06-18",
+      "2025-06-19"
+    ],
+    "created_at": "2025-04-02T17:00:00.000Z",
+    "num_modification": 0,
+    "last_modification": "2025-04-02T17:10:00.000Z",
+    "attendees": [
+      {
+        "name": "Sam",
+        "dates": [
+          {
+            "date": "2025-06-18",
+            "available": true
+          },
+          {
+            "date": "2025-06-19",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "Rachel",
+        "dates": [
+          {
+            "date": "2025-06-18",
+            "available": false
+          },
+          {
+            "date": "2025-06-19",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Lily",
+        "dates": [
+          {
+            "date": "2025-06-18",
+            "available": true
+          },
+          {
+            "date": "2025-06-19",
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "z0a1b2c3d4e5",
+    "name": "Blockchain and Cryptocurrency Forum",
+    "author": "Zoe",
+    "description": "Explore the future of finance and blockchain technologies.",
+    "dates": [
+      "2025-07-01",
+      "2025-07-02"
+    ],
+    "created_at": "2025-04-02T17:30:00.000Z",
+    "num_modification": 2,
+    "last_modification": "2025-04-02T17:35:00.000Z",
+    "attendees": [
+      {
+        "name": "Chris",
+        "dates": [
+          {
+            "date": "2025-07-01",
+            "available": true
+          },
+          {
+            "date": "2025-07-02",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Jake",
+        "dates": [
+          {
+            "date": "2025-07-01",
+            "available": false
+          },
+          {
+            "date": "2025-07-02",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Tara",
+        "dates": [
+          {
+            "date": "2025-07-01",
+            "available": true
+          },
+          {
+            "date": "2025-07-02",
+            "available": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f9g0h1i2j3k4",
+    "name": "AI and Robotics Summit",
+    "author": "Lucas",
+    "description": "Join industry leaders to discuss the intersection of AI and robotics.",
+    "dates": [
+      "2025-07-10",
+      "2025-07-11"
+    ],
+    "created_at": "2025-04-02T18:00:00.000Z",
+    "num_modification": 0,
+    "last_modification": "2025-04-02T18:05:00.000Z",
+    "attendees": [
+      {
+        "name": "Eva",
+        "dates": [
+          {
+            "date": "2025-07-10",
+            "available": true
+          },
+          {
+            "date": "2025-07-11",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Henry",
+        "dates": [
+          {
+            "date": "2025-07-10",
+            "available": false
+          },
+          {
+            "date": "2025-07-11",
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "l5m6n7o8p9q0",
+    "name": "Digital Art and Design Expo",
+    "author": "Nina",
+    "description": "A showcase of cutting-edge digital art and design.",
+    "dates": [
+      "2025-07-15",
+      "2025-07-16"
+    ],
+    "created_at": "2025-04-02T18:30:00.000Z",
+    "num_modification": 1,
+    "last_modification": "2025-04-02T18:40:00.000Z",
+    "attendees": [
+      {
+        "name": "Oliver",
+        "dates": [
+          {
+            "date": "2025-07-15",
+            "available": true
+          },
+          {
+            "date": "2025-07-16",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Lara",
+        "dates": [
+          {
+            "date": "2025-07-15",
+            "available": false
+          },
+          {
+            "date": "2025-07-16",
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r2s3t4u5v6w7",
+    "name": "Virtual Reality Meetup",
+    "author": "Grace",
+    "description": "Explore the latest VR technologies and meet like-minded enthusiasts.",
+    "dates": [
+      "2025-07-20",
+      "2025-07-21"
+    ],
+    "created_at": "2025-04-02T19:00:00.000Z",
+    "num_modification": 1,
+    "last_modification": "2025-04-02T19:10:00.000Z",
+    "attendees": [
+      {
+        "name": "Lucas",
+        "dates": [
+          {
+            "date": "2025-07-20",
+            "available": true
+          },
+          {
+            "date": "2025-07-21",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Natalie",
+        "dates": [
+          {
+            "date": "2025-07-20",
+            "available": false
+          },
+          {
+            "date": "2025-07-21",
+            "available": true
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,549 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+
+  outline: none;
+  border: none;
+
+  font-family: serif;
+}
+.date-add {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+/* .flexCenter {
+  display: flex;
+  justify-content: center;
+} */
+
+
+input,
+h1,
+h5,
+.av,
+.avBtn {
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  overflow-x: hidden;
+}
+
+/* ------------------------ HEADER ------------------------ */
+h1 {
+  font-size: 75px;
+  font-weight: 100;
+  color: #1864ab;
+  padding: 40px;
+}
+
+/* --------------------------- MAIN --------------------------- */
+input {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3)
+  ); /* Gradient background */
+  height: 40px;
+  width: 180px;
+
+  margin-right: 12px;
+
+  cursor: pointer;
+}
+
+button {
+  margin-right: 8px;
+  padding: 2px 6px;
+
+  cursor: pointer;
+}
+
+/* ------------ FORMULAIRE HTML : POST EVENT ------------ */
+#dateInputsContainer {
+  max-height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#inputDateOriginel {
+  margin-top: 0;
+}
+.newEventDates {
+  margin-right: 0;
+  margin-top: 3px;
+
+  color: #5a5a5a;
+}
+#addDatesBtn {
+  background: #f0ad4e; /* Solid color instead of an image */
+  margin-top: 6px;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%; /* Making the button circular */
+}
+.deleteDateBtn {
+  background: #d9534f; /* Solid color */
+  height: 28px;
+  width: 30px;
+  margin-left: 4px;
+  border-radius: 50%; /* Circular button */
+}
+
+#modifyEventDateInputsContainer .deleteDateBtn {
+  background: #d9534f;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 4px;
+  margin: 0;
+}
+#newEventSubmit {
+  background: #5bc0de; /* Solid color */
+  color: white;
+  height: 40px;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+#newEventSubmit:hover {
+  background-color: #4fa3c7; /* Darker red on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+input,
+#addDatesBtn,
+.deleteDateBtn,
+#newEventSubmit {
+  background-size: cover;
+  border-radius: 5px;
+}
+
+/* ------------ EVENTS SECTIONS (.eventContainer) ------------ */
+.eventContainer {
+  padding-top: 30px;
+  padding-bottom: 45px;
+  margin: auto;
+  width: 85%;
+}
+.btnsNameAuthorContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* INFOS */
+h3 {
+  font-weight: normal;
+  font-size: 25px;
+}
+p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  padding: 16px;
+}
+
+/* BTNS modify add_dates delete */
+.modifyEventBtn {
+  background-color: #007bff; /* Professional Blue */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold font for readability */
+  border: 1px solid #007bff; /* Blue border */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.modifyEventBtn:hover {
+  background-color: #0056b3; /* Darker red on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight "pressed" effect */
+}
+.addDatesBtn {
+  background-color: #28a745; /* Soft/Vibrant Green */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold font */
+  border: 1px solid #28a745; /* Matching green border */
+  padding: 10px 20px; /* Padding for size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for clickable effect */
+  transition: all 0.3s ease;
+}
+.addDatesBtn:hover {
+  background-color: #218838; /* Darker red on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Slight "pressed" effect */
+}
+
+.deleteEventBtn {
+  background-color: #dc3545; /* Bold Red */
+  color: white; /* Text color */
+  font-weight: bold; /* Slightly bold for urgency */
+  border: 1px solid #dc3545; /* Red border */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.deleteEventBtn:hover {
+  background-color: #c82333; /* Darker red on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Slight "pressed" effect */
+}
+
+/* GRID */
+.bigGrid {
+  display: grid;
+  gap: 1px;
+}
+h5 {
+  font-weight: normal;
+  font-size: 18px;
+
+  grid-row: 1;
+
+  padding: 4px;
+}
+h6 {
+  font-weight: normal;
+  font-size: 18px;
+
+  grid-column: 1;
+
+  padding: 4px 12px;
+  border: 1px solid black;
+}
+.av {
+  padding: 4px;
+  border: 1px solid black;
+}
+.greenAv {
+  color: #599208;
+}
+.redAv {
+  color: #c72121;
+}
+
+/* USERS AVAILABILITY INPUTS */
+
+.sendBtn {
+  height: 40px;
+  width: 52px;
+  margin: 0;
+  align-self: flex-end;
+  justify-self: flex-end;
+  background: #f39c12; /* Solid color */
+  border-radius: 5px;
+}
+
+.sendBtnAndInputNameDiv {
+  display: flex;
+  width: 100%;
+}
+
+.sendBtnAndInputNameDiv input {
+  align-self: center;
+  margin-top: 12px;
+}
+
+/* Container for buttons */
+.inputsBtns {
+  padding: 0;
+  align-self: flex-end;
+  background: #b0c4de; /* Default solid background */
+  height: 40px;
+  width: 140px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around; /* Distribute space evenly */
+  align-items: center; /* Centers vertically */
+  color: white;
+  justify-self: center; /* Horizontally center it within its grid cell */
+}
+
+/* Default button styles */
+.inputsBtns button {
+  padding: 0;
+  margin: 0;
+  align-self: center; /* Centers button vertically */
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: gray; /* Initially gray color */
+  height: 100%; /* Make the button height 100% to match its container */
+  transform: translate(0);
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Default gray color for buttons */
+.inputsBtns .grayAv {
+  color: gray; /* Initially gray color */
+}
+
+.inputsBtns .greenAv {
+  color: green; /* Green color for the checkmark */
+}
+
+.inputsBtns .redAv {
+  color: red; /* Red color for the "X" */
+}
+
+/* Active state for the checkmark button (green) */
+.inputsBtns.clicked .greenAv {
+  color: green; /* Green color when clicked */
+}
+
+/* Active state for the X button (red) */
+.inputsBtns.clicked .redAv {
+  color: red; /* Red color when clicked */
+}
+
+/* Hover effect for buttons */
+.inputsBtns button:hover {
+  opacity: 0.8; /* Slight hover effect */
+}
+
+/* Optional: Make buttons look more interactive */
+
+.avBtn {
+  background: transparent;
+  height: 21px;
+  width: 34px;
+
+  margin-left: 6px;
+  margin-right: 6px;
+
+  transform: translateY(8px);
+}
+
+/* dhifghezijhcvezjhvejvzjc */
+
+/* Modal Background */
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.modal-header h2 {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.modal .close {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.modal input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.modal input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.modal textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.modal button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+/* Animation for the modal */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Delete Confirmation Modal Styles */
+#deleteEventModal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+  overflow: auto; /* Enable scrolling if necessary */
+  padding-top: 60px;
+}
+
+#deleteEventModal .modal-content {
+  background-color: #fefefe;
+  position: relative;
+
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#deleteEventModal h3 {
+  font-size: 1.5rem;
+  color: #d9534f;
+  margin-bottom: 15px;
+}
+
+#deleteEventModal .eventToDeleteName {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+#deleteEventModal button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#deleteEventModal .confirmDeleteBtn {
+  background-color: #d9534f;
+  color: white;
+}
+
+#deleteEventModal .cancelDeleteBtn {
+  background-color: #5bc0de;
+  color: white;
+}
+
+#deleteEventModal .confirmDeleteBtn:hover {
+  background-color: #c9302c;
+}
+
+#deleteEventModal .cancelDeleteBtn:hover {
+  background-color: #31b0d5;
+}
+
+#deleteEventModal .closeDelete {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  transition: color 0.3s ease;
+}
+
+#deleteEventModal .closeDelete:hover,
+#deleteEventModal .closeDelete:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#modifyEventDateInputsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust spacing between the dates */
+  align-items: center;
+}
+
+.date-input-container {
+  display: flex;
+  flex-direction: column; /* Stack the input and span vertically */
+  align-items: center;
+}
+
+.date-input-container input[type="date"] {
+  margin-bottom: 5px; /* Space between input and date text */
+}
+
+.date-input-container span {
+  font-size: 14px;
+  color: #555; /* Slightly lighter color for the day of the week */
+  margin-top: 2px;
+}
+
+.eventTitle {
+  max-width: 50%;
+}

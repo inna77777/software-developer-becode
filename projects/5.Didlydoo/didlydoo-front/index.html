@@ -1,0 +1,168 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="https://media.istockphoto.com/id/1819667280/vector/upcoming-events-colorful-grey-lines-circles-circular-text.jpg?s=612x612&w=0&k=20&c=zLadoKIGMhHLRyOQL4LN5eyANV9hK5pg8slPahd6t2w="
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Didlydoo</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Puddles&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Didlydoo</h1>
+    </header>
+
+    <main>
+      <!-- New Event Form -->
+      <div class="createEventWrapper">
+        <button id="createEventBtn">&#8594; Create a new event</button>
+
+        <div class="createEventFormHolder" style="display: none">
+          <form id="newEventForm" action="">
+            <input id="newEventName" type="text" placeholder="Event name" />
+
+            <div id="dateInputsContainer">
+              <div class="date-add">
+                <input
+                  id="inputDateOriginel"
+                  class="newEventDatesInitial"
+                  type="date"
+                />
+                <button id="addDatesBtn">+</button>
+              </div>
+            </div>
+
+            <input id="newEventAuthor" type="text" placeholder="Author" />
+            <input
+              id="newEventDescription"
+              type="text"
+              placeholder="Description"
+            />
+            <input id="newEventSubmit" type="submit" value="Create Event" />
+          </form>
+        </div>
+      </div>
+
+      <div id="modifyEventModal" class="modal" style="display: none">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-header">
+            <h2>Modify Event</h2>
+          </div>
+          <form id="modifyEventForm">
+            <label for="modifyEventName">Event Name:</label>
+            <input
+              type="text"
+              id="modifyEventName"
+              name="modifyEventName"
+              required
+            />
+            <br />
+            <label for="modifyEventAuthor">Author:</label>
+            <br />
+
+            <input
+              type="text"
+              id="modifyEventAuthor"
+              name="modifyEventAuthor"
+              required
+            />
+            <br />
+            <label for="modifyEventDescription">Description:</label>
+            <br />
+
+            <textarea
+              id="modifyEventDescription"
+              name="modifyEventDescription"
+              required
+            ></textarea>
+            <br />
+            <label for="modifyEventDates">Dates:</label>
+            <div id="modifyEventDateInputsContainer"></div>
+            <!-- Container for dynamic dates -->
+            <div class="modify-model-button-container">
+              <button type="button" id="addDateToModifyEventBtn">
+                Add Date
+              </button>
+              <br />
+              <button type="submit">Save Changes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Confirmation Delete Modal -->
+      <div id="deleteEventModal" class="modal">
+        <div class="modal-content">
+          <span class="closeDelete">&times;</span>
+          <h3>
+            Are you sure you want to delete the event:
+            <span id="eventToDeleteName"></span>?
+          </h3>
+          <div>
+            <button id="confirmDeleteBtn">Yes, Delete</button>
+            <button id="cancelDeleteBtn">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Events Container -->
+      <section id="allEventsContainer"></section>
+    </main>
+
+    <!-- Modify Event Modal -->
+
+    <div class="wrapper">
+      <div class="candles">
+        <div class="light__wave"></div>
+        <div class="candle1">
+          <div class="candle1__body">
+            <div class="candle1__eyes">
+              <span class="candle1__eyes-one"></span>
+              <span class="candle1__eyes-two"></span>
+            </div>
+            <div class="candle1__mouth"></div>
+          </div>
+          <div class="candle1__stick"></div>
+        </div>
+
+        <div class="candle2">
+          <div class="candle2__body">
+            <div class="candle2__eyes">
+              <div class="candle2__eyes-one"></div>
+              <div class="candle2__eyes-two"></div>
+            </div>
+          </div>
+          <div class="candle2__stick"></div>
+        </div>
+        <div class="candle2__fire"></div>
+        <div class="sparkles-one"></div>
+        <div class="sparkles-two"></div>
+        <div class="candle__smoke-one"></div>
+        <div class="candle__smoke-two"></div>
+      </div>
+      <div class="floor"></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
