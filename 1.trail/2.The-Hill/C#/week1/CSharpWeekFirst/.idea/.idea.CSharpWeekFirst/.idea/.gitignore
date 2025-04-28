@@ -1,0 +1,53 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/.idea.CSharpWeekFirst.iml
+/projectSettingsUpdater.xml
+/modules.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# User-specific files
+.vs/
+.vscode/
+.idea/
+*.xml
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]istPublic/
+[Aa]bout/
+
+# Uncomment if you have the project's binaries
+bin/
+obj/
+
+# User-specific files for Visual Studio for Mac
+.vscode/
+
+# ASP.NET Core / .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider config folder
+.idea/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs

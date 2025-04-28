@@ -1,1 +1,6 @@
-node_modules
+# Ignore build output directories for .NET and other projects
+bin/
+obj/
+
+# Ignore dependencies for Node.js
+node_modules/
