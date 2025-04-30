@@ -16,8 +16,8 @@ Operations in many softwares development are important, let us have a look.
 
 - Addition : The operators "+" add two operands. For example: x + y
 - Substraction : The operators "-"" substract two operands. For example: x - y
-- Multiplication : The operators "_" multiply two operands. For example: x _ y
-- Division : The operators "\*" divice two operands. For example: x / y
+- Multiplication : The operators "*" multiply two operands. For example: x * y
+- Division : The operators "/" divice two operands. For example: x / y
 - Modulo : The ‘%’ operator returns the remainder when first operand is divided by the second. For example, x % y
 
 ## Relational Operators
