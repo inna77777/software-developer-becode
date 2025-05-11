@@ -1,7 +1,7 @@
 ﻿using CSharpWeekFirst.Exercises;
 namespace Tests;
 
-public class Tests
+public class UnitTest4Variables
 {
     [Test]
     public void Test_SayHello()
